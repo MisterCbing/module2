@@ -14,7 +14,8 @@ def super_sum(el):
     elif isinstance(el, set):
         temp = 0
         for i in el:
-            return super_sum(i)
+            temp += super_sum(i)
+        return temp
     else:
         return 0
 
